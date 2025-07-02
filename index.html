@@ -1,106 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Student Registration Form</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    .form-container {
-      background-color: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      width: 100%;
-      max-width: 500px;
-    }
-    .form-container h2 {
-      text-align: center;
-      margin-bottom: 25px;
-    }
-    .form-group {
-      margin-bottom: 15px;
-    }
-    .form-group label {
-      display: block;
-      margin-bottom: 5px;
-      font-weight: bold;
-    }
-    .form-group input, .form-group select {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    .form-group input[type="radio"] {
-      width: auto;
-      margin-right: 10px;
-    }
-    .form-group .radio-label {
-      font-weight: normal;
-      margin-right: 15px;
-    }
-    .submit-btn {
-      background-color: #4CAF50;
-      color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 5px;
-      width: 100%;
-      cursor: pointer;
-    }
-    .submit-btn:hover {
-      background-color: #45a049;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Simple Website</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-  <div class="form-container">
-    <h2>Student Registration</h2>
-    <form>
-      <div class="form-group">
-        <label for="fullname">Full Name</label>
-        <input type="text" id="fullname" name="fullname" required />
-      </div>
-      
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required />
-      </div>
+    <header>
+        <h1>Cyber Security</h1>
+    </header>
 
-      <div class="form-group">
-        <label>Gender</label>
-        <label class="radio-label"><input type="radio" name="gender" value="Male" required /> Male</label>
-        <label class="radio-label"><input type="radio" name="gender" value="Female" required /> Female</label>
-      </div>
+    <nav>
+        <button onclick="showSection('home')">Home</button>
+        <button onclick="showSection('blog')">Blog/News</button>
+        <button onclick="showSection('gallery')">Gallery</button>
+        <button onclick="showModal('termsModal')">Terms & Conditions</button>
+        <button onclick="showModal('privacyModal')">Privacy Policy</button>
+        <button onclick="showSection('Content')">Content</button>
 
-      <div class="form-group">
-        <label for="course">Course</label>
-        <select id="course" name="course" required>
-          <option value="">--Select Course--</option>
-          <option value="Computer Science">Computer Science</option>
-          <option value="Engineering">Engineering</option>
-          <option value="Mathematics">Mathematics</option>
-          <option value="Biology">Biology</option>
-        </select>
-      </div>
+    </nav>
 
-      <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" required />
-      </div>
+    <!-- Home Section -->
+    <section id="home" class="active">
+        <h2>Welcome to My Website</h2>
+        <h2>made by Ajay Singh</h2>
+        <p></p>
 
-      <button type="submit" class="submit-btn">Register</button>
-    </form>
-  </div>
+    </section>
 
+
+    <!-- Blog/News Section -->
+    <section id="blog">
+        <h2>Blog / News</h2>
+        <div class="blog">
+            <h3>Latest News 1</h3>
+            <p>
+            <h1></h1>🔐 Cyber Crime kya hai?<h1></h1>
+            Cyber crime ka matlab hai computer, mobile, ya internet ka use karke kisi vyakti, samuh ya sanstha ko
+            nuksaan pahunchana ya unka data chura lena.
+
+            Example: Kisi ka Facebook hack karna, OTP lekar paise chura lena, etc.
+
+            🔍<h1> Cyber Crime ke Pramukh Prakar</h1>
+            (Types of Cyber Crime)
+
+            Hacking – Kisi ke computer ya account ko bina permission ke access karna.
+
+            Phishing – Fake email ya message bhejkar password ya OTP lena.
+
+            Online Fraud – Online shopping ya bank fraud.
+
+            Identity Theft – Kisi doosre ki personal info ka galat use.
+
+            Cyber Bullying – Social media par kisi ko badnaam karna.
+
+            Ransomware Attack – Computer ko lock karke paise mangna.
+
+            Cyber Stalking – Bar bar online kisi ko follow karna ya pareshaan karna.
+
+            Child Pornography – Bachchon se judi illegal photos ya videos ka use.
+
+            <h1>⚖️ Cyber Crime se Jude Kanoon (Laws)</h1>
+            Information Technology Act, 2000 – Cyber crime ka main kanoon.
+
+            IPC 420 – Dhoka ya fraud karne par sza.
+
+            IPC 509 – Mahila ki izzat ko hurt karna.
+
+            Section 66 & 67 IT Act – Galat content ya obscene content post karne par.
+
+            <h1>🛡️ Cyber Crime se Bachav ke Tarike</h1>
+            (Protection from Cyber Crime)
+
+            Strong password use karo (A@b1234 jaisa).
+
+            2-step verification (2FA) on karo.
+
+            OTP, ATM PIN kisi ko mat do.
+
+            Fake email ya link par click mat karo.
+
+            Antivirus updated rakho.
+
+            Free public Wi-Fi ka use na karo.
+
+            <h1>🆘 Complaint kaha karein?</h1>
+            (Where to report cyber crime)
+
+            🔗 www.cybercrime.gov.in – National Cyber Crime Portal
+
+            ☎️ Call 1930 – Online fraud hone par turant call karein.
+
+            🏢 Apne najdeeki Cyber Cell ya Police Station me complaint karein.
+
+
+
+
+
+
+
+            </p>
+        </div>
+        <div class="blog">
+            <h3>Latest News 2</h3>
+            <p>🔐
+            <h1> What is Cyber Security?</h1>
+            Cyber Security ka matlab hai apne computer, mobile, network aur data ko hackers, virus, aur online fraud se
+            bachana.
+            Yeh digital duniya ki suraksha hoti hai jo aapke personal aur business data ko safe rakhti hai.
+
+            <h1>🎯 Cyber Security ka Purpose kya hai?</h1>
+            Apne personal aur financial data ko safe rakhna
+
+            Computer aur mobile system ko hack hone se bachana
+
+            Online fraud aur malware attack se protection dena
+
+            Websites aur apps ki safety ensure karna
+
+            <h1>📂 Types of Cyber Security</h1>
+            Network Security – Wi-Fi ya internet network ko secure karna
+
+            Application Security – Mobile apps aur software ko bugs se protect karna
+
+            Information Security – Personal data jaise Aadhar, password ko secure rakhna
+
+            Cloud Security – Google Drive, iCloud jaise cloud data ko safe rakhna
+
+            Endpoint Security – Mobile, laptop jaise devices ki security
+
+            Cyber Forensics – Jab cyber crime ho jaaye to uski investigation karna
+
+            <h1>💻 Cyber Security ke Real-Life Examples</h1>
+            Strong password ka use karna (jaise: A@b1234)
+
+            2FA (2-step verification) lagana
+
+            Antivirus install karna
+
+            Fake email ya suspicious link se bachna
+
+            Sirf HTTPS websites ka use karna
+
+            <h1>⚖️ Cyber Security se Jude Laws (India mein)</h1>
+            Information Technology Act 2000 – Cyber crimes se deal karta hai
+
+            IPC Section 419, 420 – Fraud aur cheating ke cases
+
+            CERT-In – Government ki cyber security agency
+
+            <h1>🧑‍💻 Cyber Security ke Career Options</h1>
+            Ethical Hacker – Systems ki kamzori dhoondh kar unhe secure karna
+
+            Cyber Security Analyst – Threats identify karna aur solutions dena
+
+            Penetration Tester – System ko test karna jaise hacker test kare
+
+            Security Engineer – Security tools aur firewalls ka setup karna
+
+            Cyber Forensics Expert – Crime ke baad investigation karna
+
+            <h1>✅ Cyber Security Tips (Bachav ke Tarike)</h1>
+            Password strong aur unique rakho
+
+            OTP aur personal details kisi se share na karo
+
+            Public Wi-Fi par online banking mat karo
+
+            2FA enable karo
+
+            Software aur antivirus hamesha update rakho
+
+
+
+
+
+
+
+
+            </p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="" onclick="showImage(this.src)">
+            <img src="image.jpg/kerfin7_nea_2792.jpg" alt="Data protectionS" onclick="showImage(this.src)">
+            <img src="image.jpg/cc.jpg" alt="Image 3" onclick="showImage(this.src)">
+            <img src="image.jpg/crime.jpg" alt="Image 4" onclick="showImage(this.src)">
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+    <!-- Terms & Conditions Modal -->
+    <div id="termsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('termsModal')">×</span>
+            <h2>Terms & Conditions</h2>
+            <p>Here are the terms and conditions...</p>
+        </div>
+    </div>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacyModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('privacyModal')">×</span>
+            <h2>Privacy Policy</h2>
+            <p>Here is the privacy policy...</p>
+        </div>
+    </div>
+
+    <!-- contact -->
+
+    <div class="contact">
+        <h2></h2>
+        <p></p>
+        <div class="social-links">
+            <a href="https://instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com/yourusername" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+
+    <!-- Image Preview Modal -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content" style="text-align:center;">
+            <span class="close" onclick="closeModal('imageModal')">×</span>
+            <img id="modalImage" src="" style="max-width:100%; height:auto;">
+        </div>
+    </div>
+
+    <head>
+        <style>
+            body {
+                /* background image path (local ya online) */
+                background-image: url('https://images.pexels.com/photos/633409/pexels-photo-633409.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+                /* ya ek online image link bhi use kar sakte ho */
+
+                /* image ka size adjust karne ke liye */
+                background-size: cover;
+                /* ya contain */
+
+                /* image repeat na ho */
+                background-repeat: no-repeat;
+
+                /* image center me ho */
+                background-position: center;
+
+                /* page full height le */
+                height: 100vh;
+                margin: 0;
+                font-family: Arial, sans-serif;
+                color: white;
+            }
+
+
+            #blog {
+                background-color: rgba(255, 255, 255, 0.1);
+                /* white with transparency */
+                padding: 20px;
+                border-radius: 10px;
+                color: #fff;
+                /* text color white for better visibility on dark backgrounds */
+            }
+
+            .blog-content {
+                background-color: transparent;
+                /* ensure content inside is also transparent */
+            }
+        </style>
+    </head>
+
+
+    <script src="script.js"></script>
 </body>
+
 </html>
